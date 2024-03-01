@@ -498,4 +498,7 @@
   .product_padding {
     padding: 55px 0px 40px;
   }
+  .buy_slider > .slick-list {
+    overflow: hidden !important;
+  }
 }
