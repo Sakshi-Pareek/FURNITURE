@@ -1,0 +1,508 @@
+@import url(./root.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none !important;
+  text-decoration: none !important;
+  scroll-behavior: smooth !important;
+}
+/* ----------------------------------common-classes-------------------------------- */
+.lh_150 {
+  line-height: 150% !important;
+}
+.lh_130 {
+  line-height: 130%;
+}
+.common_btn {
+  background-color: #bd7d41;
+  padding: 17px 46.5px;
+  border: 2px solid transparent;
+}
+.card_btn {
+  background-color: #bd7d41;
+  padding: 8px 10.6px;
+  border: 2px solid transparent;
+}
+.common_btn:hover,
+.card_btn:hover {
+  background-color: white;
+  border: 2px solid #bd7d41;
+  color: #bd7d41 !important;
+}
+.duration {
+  transition: all 0.3s linear;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.heading_line {
+  max-width: 95px;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  margin-right: 11px;
+}
+.fs_11 {
+  font-size: 11.37px;
+}
+/* -------------------------------------navbar------------------------------------ */
+.bg_hero {
+  background-image: url("../images/png/Herobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.hero_section_height {
+  min-height: 100vh !important;
+}
+.gap_55 {
+  gap: 55px;
+}
+.max_w_908 {
+  max-width: 908px !important;
+}
+.under_line::after,
+.footer_link::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 0;
+  background-color: #bd7d41;
+  transition: all 0.3s linear;
+}
+.under_line::after {
+  height: 3px;
+}
+.footer_link::after {
+  height: 1px;
+}
+.under_line:hover::after,
+.footer_link:hover::after {
+  width: 100%;
+}
+.hero_py {
+  padding-top: 150px;
+  padding-bottom: 398px;
+}
+/* ----------------------------------------Welcome Our Story------------------------------------- */
+.max_w_506 {
+  max-width: 506px;
+}
+.story_padding {
+  padding: 70px 0px 113px;
+}
+.line {
+  max-width: 66px;
+  width: 100%;
+  height: 1px;
+  background-color: #243040;
+}
+.max_w_254 {
+  width: 254px;
+}
+/* -----------------------------------Buy trending furniture Products--------------------------------- */
+.bg_gray {
+  background-color: #f7f7f8;
+}
+.trending_margin {
+  margin-top: 153px;
+}
+.pt_40 {
+  padding-top: 40px;
+}
+.slider_btn {
+  height: 41px !important;
+  width: 41px !important;
+  border-radius: 10px;
+}
+.bg_gradient_box {
+  background: linear-gradient(180deg, #243040 0%, #8b929b 100%);
+  width: 700px;
+  height: 417px;
+  transform: translateY(-177px);
+}
+.buy_slide_card {
+  padding: 15px 12px 27px 17px;
+}
+.max_w_98 {
+  max-width: 98px;
+}
+.buy_slider > .slick-list {
+  overflow: visible !important;
+  padding: 0 0 0 0;
+  position: relative;
+  z-index: -1;
+}
+.buy_slider > .slick-list::after {
+  content: " ";
+  position: absolute !important;
+  top: -1px !important;
+  bottom: -1px !important;
+  width: 4000px !important;
+  right: 100% !important;
+  background-color: #f7f7f8 !important;
+}
+.max_w_266 {
+  max-width: 266px;
+}
+/* ========================================our-product===================================== */
+.product_padding {
+  padding: 135px 0px 121px;
+}
+.our_product_card {
+  padding: 23px 15px 25px;
+}
+.our_product_card:hover {
+  box-shadow: 6px 13px 38px 0px #0000001f;
+}
+.our_product_card:hover > img {
+  transform: scale(1.02);
+}
+/* =========================================wooden-section=============================== */
+.wooden_padding {
+  padding: 64px 0px 0px;
+}
+.wooden_gradient_box {
+  background: #243040;
+  max-width: 701px;
+  min-height: 270px;
+  bottom: -15%;
+}
+/* .===============================================latest-deal=================================== */
+.latestdeals .slick-list {
+  padding: 45px 23px !important;
+}
+.deal_prev_btn,
+.deal_next_btn {
+  width: 99px;
+  height: 99px;
+  border-radius: 99px;
+  box-shadow: 2px 7px 16px 0px #00000014;
+  z-index: 3;
+}
+.deal_prev_btn {
+  left: -5%;
+}
+.deal_next_btn {
+  right: -5%;
+}
+/* =================================================festival-offers================================== */
+.bg_img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* ==============================================testimonaial========================================== */
+.testimg1 {
+  max-width: 108px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(195, 176, 169, 0.3));
+  filter: drop-shadow(0px 50px 50px 0px #c3b0a94d);
+}
+.testimg2 {
+  max-width: 115.31px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(118, 68, 35, 0.3));
+  filter: drop-shadow(0px 50px 50px 0px #7644234d);
+}
+.testimg3 {
+  max-width: 76px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(49, 173, 234, 0.3));
+  filter: drop-shadow(0px 50px 50px 0px #31adea4d);
+}
+.testimg4 {
+  max-width: 116px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0px 50px 50px 0px #0000000a);
+}
+.testimg5 {
+  max-width: 92px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(131, 121, 84, 0.3));
+  filter: drop-shadow(0px 50px 50px 0px #8379544d);
+}
+.testimg6 {
+  max-width: 83px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(43, 43, 43, 0.3));
+  filter: drop-shadow(0px 50px 50px 0px #2b2b2b4d);
+}
+.testimg7 {
+  max-width: 116px;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(110, 52, 37, 0.3));
+  filter: drop-shadow(0px 50px 50px 0px #6e34254d);
+}
+.testimonaial .slick-track {
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+.mw_350 {
+  max-width: 350px !important;
+}
+/* ===============================================footer======================================= */
+.bg_footer {
+  background-color: #243040;
+}
+.footer_heading {
+  border-bottom: 1px solid #bd7d41;
+  max-width: 130px;
+}
+.footer_bottom_line {
+  background-color: #91979f;
+  height: 1px;
+}
+/* ====================================back-to-top============================================= */
+#scroll svg {
+  height: 25px;
+  width: 22px;
+}
+#scroll {
+  display: none;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: #bd7d41;
+  border: 2px solid white !important;
+  border-radius: 60px;
+  z-index: 15;
+  animation: moves 1s alternate infinite;
+}
+#scroll span {
+  margin-left: -7.5px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+#scroll:hover {
+  box-shadow: 0px 5px 10px #bd7d41;
+}
+@keyframes moves {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+/* =================================================preloader================================== */
+.bounce {
+  animation: bounce 1.2s ease infinite;
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-20%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-11%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-6%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.opacity_0 {
+  opacity: 0;
+}
+.pointer_event_none {
+  pointer-events: none;
+}
+.z_index_20 {
+  z-index: 20;
+}
+/* =========================================media-quaries=========================================== */
+@media (max-width: 1441px) {
+  .hero_py {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+  .deal_prev_btn,
+  .deal_next_btn {
+    width: 70px;
+    height: 70px;
+  }
+  .deal_prev_btn {
+    left: -2%;
+  }
+  .deal_next_btn {
+    right: -2%;
+  }
+  .latestdeals .slick-list {
+    padding: 45px 0px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .header_h {
+    height: 100vh;
+  }
+  .hero_py {
+    padding-bottom: 0 !important;
+  }
+  .max_w_436 {
+    max-width: 436px !important;
+  }
+  .max_w_565 {
+    max-width: 565px;
+  }
+}
+@media (max-width: 1200px) {
+  .wooden_padding {
+    padding: 60px 0px 40px;
+  }
+  .story_padding {
+    padding: 80px 0px;
+  }
+  .product_padding {
+    padding: 60px 0px 20px;
+  }
+  .trending_margin {
+    margin-top: 60px;
+  }
+  .bg_img {
+    background-size: cover;
+    background-position: left;
+  }
+  .bg_gradient_box {
+    width: 500px;
+    height: 300px;
+    transform: translateY(-80px);
+  }
+  .wooden_gradient_box {
+    max-width: 500px;
+    min-height: 240px;
+    bottom: -10%;
+  }
+  .buy_slide_card {
+    padding: 12px;
+  }
+  .our_product_card {
+    padding: 15px;
+  }
+}
+@media (max-width: 991px) {
+  label[for="menuIcon"] {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  .line1,
+  .line2,
+  .line3 {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+    align-items: center;
+    transition: all 300ms linear;
+  }
+  .cross_icon .line1 {
+    transform: rotate(50deg) translate(13px, 13px);
+    transition: all 0.2s linear;
+  }
+  .cross_icon .line2 {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  .cross_icon .line3 {
+    transform: rotate(-50deg) translateY(-50%);
+    transition: all 0.2s linear;
+  }
+  .navbox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: all 300ms linear;
+    z-index: 1;
+    gap: 30px !important;
+  }
+  .right-0 {
+    right: 0;
+  }
+  .max_w_506 {
+    max-width: unset;
+  }
+  .product_padding {
+    padding: 62px 0px 50px;
+  }
+  .common_btn {
+    padding: 8px 46.5px;
+  }
+  .trending_margin {
+    margin-top: 0px;
+  }
+  .story_padding {
+    padding: 60px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .deal_prev_btn,
+  .deal_next_btn {
+    width: 55px;
+    height: 55px;
+  }
+  .deal_prev_btn > svg,
+  .deal_next_btn > svg {
+    width: 30px;
+  }
+  .latestdeals .slick-list {
+    padding: 20px 0px 40px !important;
+  }
+  #loader {
+    width: 80px;
+    height: 80px;
+  }
+  #scroll {
+    right: 10px;
+    bottom: 10px;
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .hero_py {
+    padding-top: 100px;
+    padding-bottom: 300px;
+  }
+  .maxw_30 {
+    max-width: 30px;
+  }
+  .logo_w {
+    width: 50px !important;
+  }
+  .testimonaial .slick-track {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  .wooden_padding {
+    padding: 50px 0px 30px;
+  }
+  .product_padding {
+    padding: 55px 0px 40px;
+  }
+}

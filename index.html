@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURNITURE</title>
+    <link rel="stylesheet" href="./assets/css/App.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- -------------------------fav-icon-------------------------- -->
+    <link rel="shortcut icon" href="./assets/images/svg/WebLogo.svg" type="image/x-icon">
+    <!-- ---------------------------------------bootstrap-link------------------------------------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ------------------------------------------------slick-slider-link-------------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------------------------------------aos-link-------------------------------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======================================preloader========================================= -->
+    <div id="preloader"
+        class="min-vh-100 w-100 bg-black position-fixed start-0 top-0 d-flex align-items-center justify-content-center z_index_20 duration gap-2">
+        <div class="d-flex justify-content-center align-items-center gap-2 bounce">
+            <img src="./assets/images/svg/WebLogo.svg" alt="WebLogo"><span
+                class="ff_poppins fs_5lg text-white">FURNITURE</span>
+        </div>
+    </div>
+    <!-- =======================================back-to-top======================================== -->
+    <a href="#" id="scroll" class="duration cursor_pointer position-fixed"><span
+            class="position-absolute top-50 start-50"></span></a>
+    <!-- =========================================header-section=========================================== -->
+    <header class="bg_hero header_h">
+        <!-- =============navbar================== -->
+        <nav class="pt-4 container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex gap-2"><img src="./assets/images/svg/WebLogo.svg" alt="logo"
+                        class="w-100 logo_max_w"><span
+                        class="ff_roboto fw-bold fs_3lg text-white d-flex align-items-end d-none d-sm-block">FURNITURE</span></a>
+                <label for="menuIcon" id="label" onclick="showNav()">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </label>
+                <ul class="d-flex align-items-center gap_55 navbox m-0 p-0">
+                    <li class="under_line position-relative"><a href="#home"
+                            class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">
+                            HOME</a>
+                    </li>
+                    <li class="under_line position-relative"><a href="#about"
+                            class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">ABOUT
+                            US</a>
+                    </li>
+                    <li class="under_line position-relative"><a href="#shop"
+                            class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">SHOP</a>
+                    </li>
+                    <li class="under_line position-relative"><a href="#contact"
+                            class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">CONTACT
+                            US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- =============navbar================== -->
+        <!-- =============Hero-Section================== -->
+        <div class="container hero_py d-flex justify-content-center align-items-center flex-column" id="home">
+            <h1 class="ff_poppins fw-bold fs_8xl text-white text-center max_w_908 mx-auto w-100 lh_150 mb-sm-3 mb-2"
+                data-aos="zoom-in">
+                Awesome
+                Design Best Furniture For Your Interior</h1>
+            <p class="ff_poppins fw-normal fs_md text-white text-center mb-md-5 mb-4 pb-lg-2" data-aos="zoom-in">Lorem
+                ipsum dolor sit
+                amet,
+                consectetur adipiscing elit. Vivamus </p>
+            <div data-aos="zoom-in">
+                <a href="#" class="common_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration ">SHOP
+                    NOW</a>
+            </div>
+        </div>
+        <!-- =============Hero-Section================== -->
+    </header>
+    <!-- ===========================================Welcome Our Story======================================= -->
+    <section class="story_padding" id="about">
+        <div class="container">
+            <div
+                class="row flex-lg-row flex-column-reverse justify-content-between align-items-center gap-lg-0 gap-lg-5 gap-4">
+                <div class="col-lg-5">
+                    <div class="position-relative" data-aos="zoom-in">
+                        <img src="./assets/images/png/OurStoryChair.png" alt="OurStoryChair" class="w-100 max_w_506">
+                        <div
+                            class="d-flex align-items-center bg-white p-sm-3 px-2 py-1 position-absolute end-0 bottom-0 max_w_254 gap-3">
+                            <p class="ff_poppins fw-normal fs_4sm text_black01 text-nowrap mb-0">Explore Video</p>
+                            <div class="line flex align-items-center justify-content-center"></div>
+                            <p class="mb-0"><svg class="maxw_30 cursor_pointer" width="45" height="45"
+                                    viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22.5" cy="22.5" r="22.5" fill="#BD7D41" />
+                                    <path d="M33 22.5L17.25 31.5933L17.25 13.4067L33 22.5Z" fill="white" />
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7 ps-xl-0 ps-lg-4">
+                    <h2 class="text_primary ff_poppins fw-normal fs_md lh_150 mb-xl-4 mb-sm-2 mb-0 d-flex align-items-center"
+                        data-aos="zoom-in">
+                        <span class="heading_line"></span>Welcome
+                        Our Story
+                    </h2>
+                    <h3 class="text_black01 ff_poppins fw-bold fs_5lg mb-xl-3 mb-sm-2 mb-1 pb-xl-1 lh_150 max_w_436"
+                        data-aos="zoom-in">
+                        We
+                        create the product you tell us you wish existed.</h3>
+                    <p class="ff_poppins fw-normal fs_8sm lh_150 mb-md-4 mb-3 pb-xl-2 max_w_565" data-aos="zoom-in">
+                        Lorem ipsum dolor
+                        sit
+                        amet,
+                        consectetur adipiscing elit. Sed faucibus, urna at pulvinar porta, augue lorem ullamcorper
+                        orci,
+                        non rhoncus nisi neque sit amet nibh. Phasellus consectetur semper ante et mattis</p>
+                    <div data-aos="zoom-in">
+                        <a href="#"
+                            class="common_btn duration ff_poppins fw-semibold fs_md text-white d-inline-block">READ
+                            MORE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================Buy trending furniture Products=============================== -->
+    <section class="bg_gray trending_margin position-relative pb-xl-5 pb-lg-0 pb-4 pt-lg-4 pt-5" id="shop">
+        <div class="bg_gradient_box position-absolute end-0 z-0 d-lg-block d-none"></div>
+        <div class="overflow-hidden">
+            <div class="container position-relative z-1 pb-5 pt-3">
+                <div class="row justify-content-between gap-lg-0 gap-4">
+                    <div class="col-xl-4 col-lg-5">
+                        <h2 class="text_primary ff_poppins fw-normal fs_md lh_150 mb-xl-4 pb-1 mb-sm-1 mb-0 d-flex align-items-center"
+                            data-aos="zoom-in">
+                            <span class="heading_line"></span>Shopping Store
+                        </h2>
+                        <h3 class="text_black01 ff_poppins fw-bold fs_5lg mb-xl-3 mb-sm-2 mb-1 pb-xl-1 lh_150 max_w_436"
+                            data-aos="zoom-in">
+                            Buy
+                            trending furniture Products.</h3>
+                        <p class="ff_poppins fw-normal fs_8sm lh_150 mb-4 pb-xl-3 max_w_565" data-aos="zoom-in">Lorem
+                            ipsum dolor sit
+                            amet,
+                            consectetur adipiscing elit. Sed faucibus, urna at pulvinar porta</p>
+                        <div class="d-flex gap-3" data-aos="zoom-in">
+                            <div
+                                class="slider_btn prev_btn bg-white d-flex justify-content-center align-items-center cursor_pointer">
+                                <svg width="21" height="8" viewBox="0 0 21 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM21 4.5H1V3.5H21V4.5Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            <div
+                                class="slider_btn next_btn bg-white d-flex justify-content-center align-items-center cursor_pointer">
+                                <svg width="21" height="8" viewBox="0 0 21 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mt-xl-4">
+                        <div class="buyslider buy_slider">
+                            <div class="buy_slide_card bg-white mx-2">
+                                <img src="./assets/images/png/SingleSofa1.png" alt="SingleSofa1" class="w-100">
+                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                    <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
+                                    <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                                    <p class="ff_poppins fw-normal fs_11 mb-0"><span>₹</span> 1200.00</p>
+                                </div>
+
+                            </div>
+                            <div class="buy_slide_card bg-white mx-2">
+                                <img src="./assets/images/png/SingleSofa2.png" alt="SingleSofa1" class="w-100">
+                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                    <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
+                                    <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                                    <p class="ff_poppins fw-normal fs_11 mb-0"><span>₹</span> 1200.00</p>
+                                </div>
+
+                            </div>
+                            <div class="buy_slide_card bg-white mx-2">
+                                <img src="./assets/images/png/SingleSofa1.png" alt="SingleSofa1" class="w-100">
+                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                    <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
+                                    <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                                    <p class="ff_poppins fw-normal fs_11 mb-0"><span>₹</span> 1200.00</p>
+                                </div>
+
+                            </div>
+                            <div class="buy_slide_card bg-white mx-2">
+                                <img src="./assets/images/png/SingleSofa2.png" alt="SingleSofa1" class="w-100">
+                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                    <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
+                                    <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                                    <p class="ff_poppins fw-normal fs_11 mb-0"><span>₹</span>1200.00</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============================================Our Products=============================== -->
+    <section class="product_padding" id="product">
+        <div class="container">
+            <h2 data-aos="zoom-in"
+                class="text_primary ff_poppins fw-normal fs_md lh_150 mb-xl-3 pb-1 mb-sm-2 mb-0 d-flex align-items-center">
+                <span class="heading_line"></span>Shopping Store
+            </h2>
+            <div class="d-md-flex justify-content-between align-items-center mb-lg-3" data-aos="zoom-in">
+                <h3 class="text_black01 ff_poppins fw-bold fs_5lg lh_150 max_w_436 mb-md-0 mb-3">Buy
+                    Our Products</h3>
+                <a href="#" class="common_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration">VIEW
+                    ALL
+                    PRODUCT</a>
+            </div>
+            <div class="pt-lg-5 pt-5 mt-xxl-4 row" id="cardContainer">
+                <!-- --------cards----------- -->
+            </div>
+        </div>
+    </section>
+    <!-- ====================================wooden-sofa========================================== -->
+    <section class="bg_gray wooden_padding position-relative" id="single">
+        <div class="position-absolute end-0 wooden_gradient_box w-100 z-0 d-lg-block d-none"></div>
+        <div class="container">
+            <div class="row justify-content-xl-start justify-content-between gap-lg-0 gap-5">
+                <div class="col-xl-4 col-lg-5">
+                    <h2 class="text_primary ff_poppins fw-normal fs_md lh_150 mb-xl-4 pb-xl-1 mb-sm-2 mb-0 d-flex align-items-center"
+                        data-aos="zoom-in">
+                        <span class="heading_line"></span>Shopping Store
+                    </h2>
+                    <h3 class="text_black01 ff_poppins fw-bold fs_5lg lh_150 max_w_436 mb-xl-5 mb-lg-4 mb-3 pb-xl-1"
+                        data-aos="zoom-in">
+                        Wooden Sofa
+                        Starts From ₹ 1200.00</h3>
+                    <div data-aos="zoom-in">
+                        <a href="#"
+                            class="common_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration">SHOP
+                            NOW</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 position-relative z-1" data-aos="zoom-in">
+                    <img src="./assets/images/png/woodenimg.png" alt="woodenimg" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================Latest Deal========================================== -->
+    <section class="py-xxl-5 pt-5 my-xxl-5 my-lg-3 mb-md-3 mb-4" id="contact">
+        <div class="container pt-md-4 position-relative">
+            <div
+                class="deal_prev_btn bg-white top-50 d-xxl-flex d-none cursor_pointer align-items-center justify-content-center position-absolute">
+                <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM42 9H1V7H42V9Z"
+                        fill="black"></path>
+                </svg>
+            </div>
+            <div
+                class="deal_next_btn bg-white top-50 cursor_pointer d-xxl-flex d-none align-items-center justify-content-center position-absolute">
+                <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM0 9H41V7H0V9Z"
+                        fill="black"></path>
+                </svg>
+            </div>
+            <h2 class="text_primary ff_poppins fw-normal fs_md lh_150 mb-xxl-3 pb-1 mb-sm-1 mb-0 d-flex align-items-center"
+                data-aos="zoom-in">
+                <span class="heading_line"></span>Shopping Store
+            </h2>
+            <h3 class="text_black01 ff_poppins fw-bold fs_5lg lh_150 max_w_436 mb-0" data-aos="zoom-in">Buy
+                Latest Deal</h3>
+            <div class="d-xxl-none d-flex gap-3 mt-md-3 mt-2" data-aos="zoom-in">
+                <div class="deal_prev_btn bg-white d-flex cursor_pointer align-items-center justify-content-center">
+                    <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM42 9H1V7H42V9Z"
+                            fill="black"></path>
+                    </svg>
+                </div>
+                <div class="deal_next_btn bg-white cursor_pointer d-flex align-items-center justify-content-center">
+                    <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M41.7071 8.70711C42.0976 8.31658 42.0976 7.68342 41.7071 7.29289L35.3431 0.928932C34.9526 0.538408 34.3195 0.538408 33.9289 0.928932C33.5384 1.31946 33.5384 1.95262 33.9289 2.34315L39.5858 8L33.9289 13.6569C33.5384 14.0474 33.5384 14.6805 33.9289 15.0711C34.3195 15.4616 34.9526 15.4616 35.3431 15.0711L41.7071 8.70711ZM0 9H41V7H0V9Z"
+                            fill="black"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latestdeals" data-aos="zoom-in">
+                    <div class="our_product_card overflow-hidden duration cursor_pointer mx-2">
+                        <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
+                        <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
+                            <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                        </div>
+                        <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                            <a href="#"
+                                class="card_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration">ADD
+                                TO
+                                CART</a>
+                        </div>
+                    </div>
+                    <div class="our_product_card overflow-hidden duration cursor_pointer mx-2">
+                        <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
+                        <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
+                            <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                        </div>
+                        <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                            <a href="#"
+                                class="card_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration">ADD
+                                TO
+                                CART</a>
+                        </div>
+                    </div>
+                    <div class="our_product_card overflow-hidden duration cursor_pointer mx-2">
+                        <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
+                        <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
+                            <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                        </div>
+                        <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                            <a href="#"
+                                class="card_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration">ADD
+                                TO
+                                CART</a>
+                        </div>
+                    </div>
+                    <div class="our_product_card overflow-hidden duration cursor_pointer mx-2">
+                        <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
+                        <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
+                            <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                        </div>
+                        <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="ff_poppins fw-semibold fs_8md lh_150 mb-0"><span>₹ </span>1200.00</p>
+                            <a href="#"
+                                class="card_btn ff_poppins fw-semibold fs_md text-white d-inline-block duration">ADD
+                                TO
+                                CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================================================Festival Offer=============================== -->
+    <div class="container" id="festival">
+        <div class="row gap-lg-0 gap-4" id="cards">
+            <!-- -----------cards-------------- -->
+        </div>
+    </div>
+    <!-- =====================================Testimonial======================================= -->
+    <section class="py-xxl-5 pt-2 my-5">
+        <div class="container py-xxl-2 my-1">
+            <h2 data-aos="zoom-in"
+                class="text_primary ff_poppins fw-normal fs_md lh_150 mb-2 pb-xxl-1 d-flex align-items-center">
+                <span class="heading_line"></span>Customer Says
+            </h2>
+            <h3 data-aos="zoom-in" class="text_black01 ff_poppins fw-bold fs_5lg lh_150 max_w_436 mb-0">
+                Testimonial</h3>
+            <div class="row align-items-center" data-aos="zoom-in">
+                <div class="testimonaial d-flex align-items-center">
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide1.png" alt="customerslide"
+                            class="w-100 testimg1 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide2.png" alt="customerslide"
+                            class="w-100 testimg2 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide3.png" alt="customerslide"
+                            class="w-100 testimg3 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide4.png" alt="customerslide"
+                            class="w-100 testimg4 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide5.png" alt="customerslide"
+                            class="w-100 testimg5 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide6.png" alt="customerslide"
+                            class="w-100 testimg6 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide7.png" alt="customerslide"
+                            class="w-100 testimg7 position-relative z-1">
+                    </div>
+                    <div class="mx-lg-5 mx-4 d-flex justify-content-center">
+                        <img src="./assets/images/png/customerslide4.png" alt="customerslide"
+                            class="w-100 testimg3 position-relative z-1">
+                    </div>
+                </div>
+                <div class="slider-for">
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">
+                                Teacher
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text-black opacity_70 fs_4sm ff_poppins fw-light text-center mb-1 pb-2">doctor
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">
+                                designer
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">
+                                devloper
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins fw-semibold fs_8sm text-black text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">Singer
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">
+                                bussiness
+                                man
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">client
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mw_350 w-100">
+                            <p class="ff_poppins text-black fw-semibold fs_8sm text-center text-nowrap mb-0 pb-1">
+                                Treepi
+                                Shoty</p>
+                            <p class="text_darkgray fs_4sm ff_poppins fw-light text-center mb-1 pb-2">
+                                Teacher
+                            </p>
+                            <p class="text-black ff_poppins fw-light fs_4sm text-center mb-0">Lorem ipsum dolor
+                                sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Suspendisse
+                                feugiat nunc in leo vestibulum, at congue erat
+                                accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================================footer============================================= -->
+    <footer class="bg_footer pt-5">
+        <div class="container pt-xl-4 mt-xl-3 pb-xl-2">
+            <div class="row justify-content-between pb-5 mb-xl-4 gap-lg-0 gap-4">
+                <div class="col-xl-4 col-lg-5">
+                    <a href="#" class="d-flex gap-2"><img src="./assets/images/svg/WebLogo.svg" alt="logo"
+                            class="logo_w"><span
+                            class="ff_roboto fw-bold fs_3lg text-white d-flex align-items-end">FURNITURE</span></a>
+                    <p class="my-xl-4 my-3 ff_roboto fw-normal fs_4sm text-white pe-xl-5">Lorem ipsum dolor sit
+                        amet,
+                        consectetur
+                        adipiscing elit.
+                        Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti.
+                        Suspendisse vitae vestibulum sapien.</p>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="https://www.instagram.com/" target="_blank"><svg width="22" height="23"
+                                viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9448 6.07621C9.9723 6.07621 9.02168 6.39145 8.21311 6.98208C7.40453 7.5727 6.77433 8.41218 6.40218 9.39435C6.03004 10.3765 5.93267 11.4573 6.12239 12.4999C6.3121 13.5426 6.78039 14.5004 7.46802 15.2521C8.15566 16.0038 9.03176 16.5157 9.98553 16.7231C10.9393 16.9305 11.9279 16.8241 12.8264 16.4173C13.7248 16.0104 14.4927 15.3215 15.033 14.4376C15.5732 13.5536 15.8616 12.5144 15.8616 11.4513C15.8601 10.0262 15.3416 8.66 14.4199 7.65232C13.4981 6.64464 12.2483 6.07782 10.9448 6.07621ZM10.9448 15.4242C10.226 15.4242 9.52335 15.1912 8.92571 14.7547C8.32807 14.3181 7.86227 13.6976 7.5872 12.9717C7.31214 12.2457 7.24017 11.4469 7.3804 10.6762C7.52062 9.90557 7.86675 9.19767 8.375 8.64205C8.88325 8.08643 9.5308 7.70804 10.2358 7.55475C10.9407 7.40145 11.6714 7.48013 12.3355 7.78083C12.9996 8.08153 13.5672 8.59075 13.9665 9.24409C14.3658 9.89743 14.579 10.6655 14.579 11.4513C14.5779 12.5046 14.1946 13.5144 13.5133 14.2593C12.832 15.0041 11.9083 15.423 10.9448 15.4242ZM15.6478 0H6.24169C4.71141 0.00191744 3.2443 0.667325 2.16223 1.85025C1.08016 3.03317 0.471481 4.63701 0.469727 6.30991V16.5927C0.471481 18.2656 1.08016 19.8695 2.16223 21.0524C3.2443 22.2353 4.71141 22.9007 6.24169 22.9026H15.6478C17.1781 22.9007 18.6452 22.2353 19.7273 21.0524C20.8094 19.8695 21.418 18.2656 21.4198 16.5927V6.30991C21.418 4.63701 20.8094 3.03317 19.7273 1.85025C18.6452 0.667325 17.1781 0.00191744 15.6478 0ZM20.1371 16.5927C20.1358 17.8939 19.6624 19.1413 18.8208 20.0614C17.9792 20.9814 16.8381 21.499 15.6478 21.5004H6.24169C5.05146 21.499 3.91036 20.9814 3.06874 20.0614C2.22712 19.1413 1.75371 17.8939 1.75238 16.5927V6.30991C1.75371 5.00875 2.22712 3.7613 3.06874 2.84124C3.91036 1.92118 5.05146 1.40366 6.24169 1.4022H15.6478C16.8381 1.40366 17.9792 1.92118 18.8208 2.84124C19.6624 3.7613 20.1358 5.00875 20.1371 6.30991V16.5927ZM17.5718 5.37511C17.5718 5.60622 17.5091 5.83213 17.3917 6.02429C17.2742 6.21645 17.1073 6.36622 16.912 6.45466C16.7167 6.5431 16.5018 6.56624 16.2944 6.52116C16.0871 6.47607 15.8966 6.36478 15.7471 6.20136C15.5976 6.03794 15.4958 5.82974 15.4546 5.60307C15.4134 5.3764 15.4345 5.14146 15.5154 4.92794C15.5963 4.71443 15.7333 4.53193 15.9091 4.40353C16.0849 4.27514 16.2915 4.20661 16.5029 4.20661C16.7863 4.20698 17.058 4.33021 17.2584 4.54926C17.4588 4.76832 17.5715 5.06532 17.5718 5.37511Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank"><svg width="22" height="23"
+                                viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.6878 0C4.91201 0 0.212158 5.13645 0.212158 11.4513C0.212158 17.7662 4.91201 22.9026 10.6878 22.9026C16.4637 22.9026 21.1635 17.7662 21.1635 11.4513C21.1635 5.13645 16.4637 0 10.6878 0ZM10.6878 22.1399C5.2968 22.1399 0.911191 17.3448 0.911191 11.4513C0.911191 5.55782 5.2968 0.762754 10.6878 0.762754C16.0789 0.762754 20.4645 5.55782 20.4645 11.4513C20.4645 17.3448 16.0789 22.1399 10.6878 22.1399Z"
+                                    fill="white" />
+                                <path
+                                    d="M16.433 7.91309C16.5055 7.76645 16.5652 7.6127 16.6114 7.45386C16.6327 7.38019 16.6332 7.30115 16.6126 7.2272C16.592 7.15325 16.5514 7.08786 16.4962 7.03966C16.4409 6.99146 16.3735 6.96271 16.303 6.95723C16.2325 6.95174 16.1621 6.96977 16.1011 7.00892C15.7664 7.22633 15.404 7.3883 15.0258 7.48957C14.5667 7.03662 13.9705 6.78551 13.3521 6.78467C13.0161 6.78495 12.6836 6.8594 12.3746 7.00354C12.0655 7.14768 11.7863 7.35856 11.5536 7.62352C11.321 7.88849 11.1396 8.20209 11.0205 8.54552C10.9014 8.88895 10.8469 9.25514 10.8604 9.62214C9.39109 9.41994 8.04942 8.60717 7.11367 7.35245C7.07782 7.30491 7.032 7.26754 6.98011 7.24351C6.92822 7.21947 6.87179 7.20948 6.81561 7.21439C6.75943 7.2193 6.70517 7.23896 6.65742 7.27169C6.60968 7.30443 6.56987 7.34929 6.54138 7.40244C6.32711 7.80448 6.21065 8.25983 6.2031 8.72505C6.19556 9.19027 6.29717 9.64985 6.49826 10.0599C6.44895 10.069 6.40156 10.0879 6.35846 10.1156C6.30564 10.1525 6.26215 10.2032 6.232 10.2633C6.20186 10.3233 6.18604 10.3907 6.18599 10.4592C6.18599 11.2698 6.5159 12.014 7.04769 12.5196L7.02482 12.5446C6.98468 12.5943 6.95706 12.6545 6.94468 12.7194C6.93231 12.7842 6.93561 12.8515 6.95427 12.9146C7.06516 13.2927 7.25031 13.6399 7.49677 13.9316C7.74323 14.2234 8.04504 14.4527 8.38108 14.6036C7.69093 14.9717 6.91857 15.1152 6.15593 15.0171C6.07754 15.0084 5.99871 15.0283 5.9318 15.0738C5.86488 15.1193 5.81366 15.1878 5.78617 15.2685C5.75976 15.3499 5.75926 15.4385 5.78476 15.5202C5.81025 15.6019 5.86025 15.6718 5.92663 15.7185C6.96342 16.4459 8.16957 16.8324 9.40154 16.8319C13.4389 16.8319 15.8522 13.2467 15.8522 9.78069L15.8516 9.66357C16.2429 9.32962 16.5827 8.92938 16.8583 8.47801C16.9001 8.40978 16.9206 8.32866 16.9168 8.24668C16.9131 8.1647 16.8853 8.08622 16.8376 8.02284C16.7899 7.95946 16.7248 7.91457 16.6519 7.8948C16.5791 7.87503 16.5023 7.88144 16.433 7.91309ZM15.293 9.16649C15.2456 9.20376 15.2075 9.25341 15.1822 9.31093C15.1568 9.36844 15.1451 9.43198 15.148 9.49573C15.1519 9.59 15.1539 9.68571 15.1539 9.77998C15.1539 12.871 13.0025 16.0684 9.40219 16.0684C8.76006 16.0687 8.12246 15.9509 7.51611 15.7199C8.24231 15.5677 8.92452 15.2273 9.50541 14.7272C9.56196 14.6784 9.60335 14.6118 9.62394 14.5364C9.64452 14.4609 9.64329 14.3804 9.62041 14.3057C9.59753 14.2311 9.55412 14.166 9.49612 14.1193C9.43812 14.0727 9.36835 14.0468 9.29635 14.0451C9.01467 14.0392 8.73819 13.9611 8.48921 13.8169C8.24024 13.6728 8.02574 13.4667 7.86301 13.2152C8.0283 13.2031 8.19032 13.1731 8.34776 13.1267C8.42396 13.1044 8.491 13.0545 8.53794 12.9852C8.58488 12.9159 8.60895 12.8312 8.60622 12.7451C8.60349 12.6589 8.57413 12.5763 8.52291 12.5107C8.4717 12.4451 8.40167 12.4004 8.32424 12.3839C8.0061 12.3132 7.71154 12.1492 7.47207 11.9095C7.23259 11.6699 7.05723 11.3636 6.96472 11.0234C7.1385 11.0712 7.31685 11.0991 7.4952 11.1055C7.64873 11.1048 7.79115 11.002 7.83884 10.8406C7.88653 10.6791 7.83035 10.5013 7.70034 10.407C7.39294 10.1831 7.15626 9.86098 7.02261 9.48453C6.88896 9.10809 6.86487 8.69572 6.95362 8.30375C8.08842 9.57666 9.62075 10.3347 11.2445 10.4263C11.3595 10.427 11.4601 10.382 11.53 10.2899C11.5999 10.1978 11.6267 10.0757 11.6019 9.95853C11.5125 9.53787 11.5525 9.09674 11.7156 8.70342C11.8787 8.31009 12.1558 7.9865 12.5041 7.78271C12.8524 7.57892 13.2524 7.5063 13.6422 7.57609C14.0321 7.64588 14.39 7.85418 14.6606 8.16877C14.7012 8.21608 14.7521 8.25132 14.8085 8.27119C14.865 8.29105 14.9252 8.29489 14.9833 8.28232C15.0911 8.25876 15.1976 8.23162 15.3028 8.20019C15.2554 8.239 15.2061 8.275 15.1552 8.30803C15.0874 8.3534 15.0358 8.42264 15.0089 8.50435C14.982 8.58606 14.9813 8.67536 15.007 8.75754C15.0327 8.83971 15.0833 8.90986 15.1504 8.95641C15.2174 9.00297 15.297 9.02316 15.376 9.01365L15.4949 8.99723C15.4294 9.05619 15.3621 9.11264 15.293 9.16649Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank"><svg width="22" height="23"
+                                viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0653 0C5.28945 0 0.5896 5.13645 0.5896 11.4513C0.5896 17.7662 5.28945 22.9026 11.0653 22.9026C16.8411 22.9026 21.541 17.7662 21.541 11.4513C21.541 5.13645 16.8411 0 11.0653 0ZM11.0653 22.1399C5.67425 22.1399 1.28863 17.3448 1.28863 11.4513C1.28863 5.55782 5.67425 0.762754 11.0653 0.762754C16.4563 0.762754 20.8419 5.55782 20.8419 11.4513C20.8419 17.3448 16.4563 22.1399 11.0653 22.1399Z"
+                                    fill="white" />
+                                <path
+                                    d="M13.3519 5.02357H11.6089C9.38896 4.99929 9.10543 6.50123 9.10543 8.12672V9.30871H8.12547C8.08118 9.30224 8.03612 9.30702 7.9938 9.32268C7.95147 9.33834 7.91301 9.36445 7.88141 9.399C7.84982 9.43354 7.82593 9.47558 7.81161 9.52185C7.79728 9.56812 7.79291 9.61738 7.79882 9.6658V11.8084C7.79291 11.8568 7.79728 11.906 7.81161 11.9523C7.82593 11.9986 7.84982 12.0406 7.88141 12.0752C7.91301 12.1097 7.95147 12.1358 7.9938 12.1515C8.03612 12.1672 8.08118 12.1719 8.12547 12.1655H9.10543V17.5219C9.09998 17.5704 9.10475 17.6196 9.11937 17.6658C9.13399 17.712 9.15808 17.7539 9.18978 17.7884C9.22149 17.8228 9.25998 17.8489 9.30231 17.8646C9.34464 17.8803 9.3897 17.8852 9.43404 17.879H11.4299C11.6226 17.9033 11.7787 17.7326 11.7173 17.5219L11.7186 12.1655H13.3519C13.3962 12.1719 13.4412 12.1672 13.4836 12.1515C13.5259 12.1358 13.5644 12.1097 13.5959 12.0752C13.6275 12.0406 13.6514 11.9986 13.6658 11.9523C13.6801 11.906 13.6845 11.8568 13.6785 11.8084V9.6658C13.6845 9.61738 13.6801 9.56812 13.6658 9.52185C13.6514 9.47558 13.6275 9.43354 13.5959 9.399C13.5644 9.36445 13.5259 9.33834 13.4836 9.32268C13.4412 9.30702 13.3962 9.30224 13.3519 9.30871H11.7167L11.7186 8.23742C11.782 7.78106 11.782 7.85533 12.1694 7.88033H13.3382C13.429 7.85819 13.5257 7.87033 13.5936 7.7982C13.6616 7.72606 13.7008 7.62751 13.6779 7.52323V5.38067C13.6839 5.33228 13.6796 5.28303 13.6654 5.23675C13.6512 5.19047 13.6273 5.14841 13.5958 5.11385C13.5642 5.07929 13.5258 5.05316 13.4835 5.0375C13.4412 5.02184 13.3962 5.01707 13.3519 5.02357ZM13.0024 7.12614L12.1831 7.09186C11.1686 7.09186 11.0836 7.69393 11.0836 8.31027L11.081 9.66437C11.0809 9.71452 11.0899 9.76419 11.1074 9.81054C11.1249 9.85689 11.1506 9.89902 11.183 9.93451C11.2154 9.97 11.2539 9.99816 11.2962 10.0174C11.3386 10.0366 11.384 10.0465 11.4299 10.0465H13.0252V11.4263H11.4312C11.3386 11.4263 11.2498 11.4664 11.1843 11.5379C11.1187 11.6094 11.0818 11.7064 11.0817 11.8077L11.081 17.1648H9.75873V11.8084C9.75873 11.5977 9.62742 11.427 9.43404 11.427H8.45213V10.0472H9.43404C9.47988 10.0473 9.52528 10.0375 9.56765 10.0183C9.61003 9.99922 9.64854 9.97116 9.68099 9.93577C9.74632 9.86363 9.75808 9.7665 9.75808 9.66509V8.12601C9.75808 6.5248 10.054 5.76204 11.6082 5.76204H13.0017V7.12614H13.0024Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-sm-3 col-6">
+                            <ul class="d-flex flex-column gap-2 mb-0 ps-0">
+                                <li class="ff_roboto fw-semibold fs_4sm text-white footer_heading lh_150 mb-2">ABOUT
+                                    STORE
+                                </li>
+                                <li><a href="#home"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Home</a>
+                                </li>
+                                <li><a href="#shop"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Shop</a>
+                                </li>
+                                <li><a href="#product"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Product</a>
+                                </li>
+                                <li><a href="#festival"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Festival
+                                        Offer</a>
+                                </li>
+                                <li><a href="#"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Log
+                                        In</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <ul class="d-flex flex-column gap-2 mb-0 ps-0">
+                                <li class="ff_roboto fw-semibold fs_4sm text-white footer_heading lh_150 mb-2">
+                                    BRANDS
+                                </li>
+                                <li><a href="#product"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Album</a>
+                                </li>
+                                <li><a href="#shop"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Shop</a>
+                                </li>
+                                <li><a href="#Product"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Product</a>
+                                </li>
+                                <li><a href="#festival"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Festival
+                                        Offer</a>
+                                </li>
+                                <li><a href="#"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Log
+                                        In</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-6 mt-sm-0 mt-4">
+                            <ul class="d-flex flex-column gap-2 mb-0 ps-0">
+                                <li class="ff_roboto fw-semibold fs_4sm text-white footer_heading lh_150 mb-2">
+                                    CATEGORIES
+                                </li>
+                                <li><a href="#single"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Single</a>
+                                </li>
+                                <li><a href="#contact"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Aleeper
+                                        Sofas</a>
+                                </li>
+                                <li><a href="#about"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Accent
+                                        Chairs</a>
+                                </li>
+                                <li><a href="#festival"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Festival
+                                        Offer</a>
+                                </li>
+                                <li><a href="#"
+                                        class="ff_roboto fw-normal fs_4sm text-white lh_150 mb-1 footer_link position-relative">Log
+                                        In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom_line w-full"></div>
+        <p class="text-white ff_roboto fw-normal fs_4sm text-center py-sm-4 py-3 my-xl-1 mb-0">@copyright<span
+                id="year_change"></p>
+    </footer>
+    <!-- ----------------------------------------aos-link----------------------------------------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ---------------------------------------bootstrap-link------------------------------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- ---------------------------------------slick-slider-link------------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/App.js"></script>
+</body>
+
+</html>
