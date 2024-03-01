@@ -156,7 +156,7 @@ const cardData = [
 const generateCards = (data) => {
   const cardContainer = document.getElementById('cardContainer');
   cardContainer.innerHTML = data.map(item => `
-      <div class="col-xl-4 col-lg-6 col-md-12 mb-xl-5 mb-md-4 mb-3" data-aos="zoom-in">
+      <div class="col-xl-4 col-md-6 col-12 mb-xl-5 mb-md-4 mb-3" data-aos="zoom-in">
       <div class="our_product_card overflow-hidden duration cursor_pointer">
       <img src=${item.Image} alt="Sofa" class="w-100 duration">
       <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
