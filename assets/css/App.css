@@ -56,19 +56,21 @@
 .hero_section_height {
   min-height: 100vh !important;
 }
+.nav:hover {
+  -webkit-text-stroke: 0.5px white;
+}
 .gap_55 {
   gap: 55px;
 }
 .max_w_908 {
   max-width: 908px !important;
 }
-.footer_icon{
-  transition: all .3s linear !important;
+.footer_icon {
+  transition: all 0.3s linear !important;
 }
-.footer_icon:hover{
+.footer_icon:hover {
   transform: scale(1.2);
 }
-
 .under_line::after,
 .footer_link::after {
   position: absolute;
@@ -78,6 +80,7 @@
   left: 0;
   right: 0;
   width: 0;
+  border-radius: 3px;
   background-color: #bd7d41;
   transition: all 0.3s linear;
 }
@@ -251,10 +254,6 @@
 .bg_footer {
   background-color: #243040;
 }
-.footer_heading {
-  border-bottom: 1px solid #bd7d41;
-  max-width: 130px;
-}
 .footer_bottom_line {
   background-color: #91979f;
   height: 1px;
@@ -415,7 +414,7 @@
     transition: 300ms linear;
     z-index: 10;
   }
-  .z_index_11{
+  .z_index_11 {
     z-index: 11;
   }
   .line,
