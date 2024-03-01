@@ -73,7 +73,7 @@
 .footer_link::after {
   position: absolute;
   content: "";
-  bottom: -1px;
+  bottom: -4px;
   margin: 0 auto;
   left: 0;
   right: 0;
