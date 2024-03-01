@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body class="overflow-hidden">
     <!-- ======================================preloader========================================= -->
     <div id="preloader"
         class="min-vh-100 w-100 bg-black position-fixed start-0 top-0 d-flex align-items-center justify-content-center z_index_20 duration gap-2">
@@ -44,30 +44,57 @@
                 <a href="#" class="d-flex gap-2"><img src="./assets/images/svg/WebLogo.svg" alt="logo"
                         class="w-100 logo_max_w"><span
                         class="ff_roboto fw-bold fs_3lg text-white d-flex align-items-end d-none d-sm-block">FURNITURE</span></a>
-                <label for="menuIcon" id="label" onclick="showNav()">
+                <ul id="navbar"
+                    class="pt-3 ps-0 m-0 d-flex flex-column list-unstyled flex-lg-row gap_55 justify-content-center align-items-center mobile_view">
+                    <li><a onclick="opennav()" href="#home"
+                            class="under_line position-relative ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">HOME</a>
+                    </li>
+                    <li><a onclick="opennav()" href="#about"
+                            class="under_line position-relative ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">ABOUT
+                            US</a></li>
+                    <li><a onclick="opennav()" href="#shop"
+                            class="under_line position-relative ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">SHOP</a>
+                    </li>
+                    <li><a onclick="opennav()" href="#contact"
+                            class="under_line position-relative ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24 ">CONTACT
+                            US</a></li>
+                </ul>
+                <div id="menubtn-icon" onclick="opennav()" class="d-lg-none z_index_11 pe-2 cursor_pointer ">
+                    <div class="line"></div>
+                    <div class="line1 my-2"></div>
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="pt-4 container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="d-flex gap-2"><img src="./assets/images/svg/WebLogo.svg" alt="logo"
+                        class="w-100 logo_max_w"><span
+                        class="ff_roboto fw-bold fs_3lg text-white d-flex align-items-end d-none d-sm-block">FURNITURE</span></a>
+                <div id="menuicon" onclick="showNav()">
                     <span class="line1"></span>
                     <span class="line2"></span>
                     <span class="line3"></span>
-                </label>
-                <ul class="d-flex align-items-center gap_55 navbox m-0 p-0">
-                    <li class="under_line position-relative"><a href="#home"
+                </div>
+                <ul id="navbox" onclick="showNav()" class="d-flex align-items-center gap_55 navbox m-0 p-0">
+                    <li class="under_line position-relative"><a onclick="showNav()" href="#home"
                             class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">
                             HOME</a>
                     </li>
-                    <li class="under_line position-relative"><a href="#about"
+                    <li class="under_line position-relative" onclick="showNav()"><a href="#about"
                             class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">ABOUT
                             US</a>
                     </li>
-                    <li class="under_line position-relative"><a href="#shop"
+                    <li class="under_line position-relative" onclick="showNav()"><a href="#shop"
                             class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">SHOP</a>
                     </li>
-                    <li class="under_line position-relative"><a href="#contact"
+                    <li class="under_line position-relative" onclick="showNav()"><a href="#contact"
                             class="ff_roboto fs_8sm fw-normal text-white text-capitalize mb-0 text-nowrap font_size_24">CONTACT
                             US</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <!-- =============navbar================== -->
         <!-- =============Hero-Section================== -->
         <div class="container hero_py d-flex justify-content-center align-items-center flex-column" id="home">
@@ -171,7 +198,6 @@
                                         d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
                                         fill="black" />
                                 </svg>
-
                             </div>
                         </div>
                     </div>
@@ -179,7 +205,7 @@
                         <div class="buyslider buy_slider">
                             <div class="buy_slide_card bg-white mx-2">
                                 <img src="./assets/images/png/SingleSofa1.png" alt="SingleSofa1" class="w-100">
-                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                <div class="mt-2 pt-1 d-flex justify-content-between align-items-center mb-2">
                                     <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
                                     <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
                                 </div>
@@ -191,7 +217,7 @@
                             </div>
                             <div class="buy_slide_card bg-white mx-2">
                                 <img src="./assets/images/png/SingleSofa2.png" alt="SingleSofa1" class="w-100">
-                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                <div class="mt-2 pt-1 d-flex justify-content-between align-items-center mb-2">
                                     <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
                                     <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
                                 </div>
@@ -203,7 +229,7 @@
                             </div>
                             <div class="buy_slide_card bg-white mx-2">
                                 <img src="./assets/images/png/SingleSofa1.png" alt="SingleSofa1" class="w-100">
-                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                <div class="mt-2 pt-1 d-flex justify-content-between align-items-center mb-2">
                                     <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
                                     <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
                                 </div>
@@ -215,7 +241,7 @@
                             </div>
                             <div class="buy_slide_card bg-white mx-2">
                                 <img src="./assets/images/png/SingleSofa2.png" alt="SingleSofa1" class="w-100">
-                                <div class="mt-2 pt-1 d-flex gap-3 align-items-center mb-2">
+                                <div class="mt-2 pt-1 d-flex justify-content-between align-items-center mb-2">
                                     <p class="ff_poppins fw-medium fs_md lh_150 mb-0 text-nowrap">Single Sofa</p>
                                     <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98">
                                 </div>
@@ -323,7 +349,7 @@
                         <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
                         <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
                             <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
-                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100">
                         </div>
                         <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
                         <div class="d-flex align-items-center justify-content-between">
@@ -338,7 +364,7 @@
                         <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
                         <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
                             <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
-                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100">
                         </div>
                         <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
                         <div class="d-flex align-items-center justify-content-between">
@@ -353,7 +379,7 @@
                         <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
                         <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
                             <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
-                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100">
                         </div>
                         <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
                         <div class="d-flex align-items-center justify-content-between">
@@ -366,9 +392,9 @@
                     </div>
                     <div class="our_product_card overflow-hidden duration cursor_pointer mx-2">
                         <img src="./assets/images/webp/latest1.webp" alt="Sofa" class="w-100 duration">
-                        <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
+                        <div class="d-flex justify-content-between align-items-center my-3 pt-1">
                             <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
-                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+                            <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100">
                         </div>
                         <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
                         <div class="d-flex align-items-center justify-content-between">
@@ -587,15 +613,16 @@
                         Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti.
                         Suspendisse vitae vestibulum sapien.</p>
                     <div class="d-flex align-items-center gap-2">
-                        <a href="https://www.instagram.com/" target="_blank"><svg width="22" height="23"
-                                viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg class="cursor_pointer footer_icon" width="22" height="23" viewBox="0 0 21 23"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M10.9448 6.07621C9.9723 6.07621 9.02168 6.39145 8.21311 6.98208C7.40453 7.5727 6.77433 8.41218 6.40218 9.39435C6.03004 10.3765 5.93267 11.4573 6.12239 12.4999C6.3121 13.5426 6.78039 14.5004 7.46802 15.2521C8.15566 16.0038 9.03176 16.5157 9.98553 16.7231C10.9393 16.9305 11.9279 16.8241 12.8264 16.4173C13.7248 16.0104 14.4927 15.3215 15.033 14.4376C15.5732 13.5536 15.8616 12.5144 15.8616 11.4513C15.8601 10.0262 15.3416 8.66 14.4199 7.65232C13.4981 6.64464 12.2483 6.07782 10.9448 6.07621ZM10.9448 15.4242C10.226 15.4242 9.52335 15.1912 8.92571 14.7547C8.32807 14.3181 7.86227 13.6976 7.5872 12.9717C7.31214 12.2457 7.24017 11.4469 7.3804 10.6762C7.52062 9.90557 7.86675 9.19767 8.375 8.64205C8.88325 8.08643 9.5308 7.70804 10.2358 7.55475C10.9407 7.40145 11.6714 7.48013 12.3355 7.78083C12.9996 8.08153 13.5672 8.59075 13.9665 9.24409C14.3658 9.89743 14.579 10.6655 14.579 11.4513C14.5779 12.5046 14.1946 13.5144 13.5133 14.2593C12.832 15.0041 11.9083 15.423 10.9448 15.4242ZM15.6478 0H6.24169C4.71141 0.00191744 3.2443 0.667325 2.16223 1.85025C1.08016 3.03317 0.471481 4.63701 0.469727 6.30991V16.5927C0.471481 18.2656 1.08016 19.8695 2.16223 21.0524C3.2443 22.2353 4.71141 22.9007 6.24169 22.9026H15.6478C17.1781 22.9007 18.6452 22.2353 19.7273 21.0524C20.8094 19.8695 21.418 18.2656 21.4198 16.5927V6.30991C21.418 4.63701 20.8094 3.03317 19.7273 1.85025C18.6452 0.667325 17.1781 0.00191744 15.6478 0ZM20.1371 16.5927C20.1358 17.8939 19.6624 19.1413 18.8208 20.0614C17.9792 20.9814 16.8381 21.499 15.6478 21.5004H6.24169C5.05146 21.499 3.91036 20.9814 3.06874 20.0614C2.22712 19.1413 1.75371 17.8939 1.75238 16.5927V6.30991C1.75371 5.00875 2.22712 3.7613 3.06874 2.84124C3.91036 1.92118 5.05146 1.40366 6.24169 1.4022H15.6478C16.8381 1.40366 17.9792 1.92118 18.8208 2.84124C19.6624 3.7613 20.1358 5.00875 20.1371 6.30991V16.5927ZM17.5718 5.37511C17.5718 5.60622 17.5091 5.83213 17.3917 6.02429C17.2742 6.21645 17.1073 6.36622 16.912 6.45466C16.7167 6.5431 16.5018 6.56624 16.2944 6.52116C16.0871 6.47607 15.8966 6.36478 15.7471 6.20136C15.5976 6.03794 15.4958 5.82974 15.4546 5.60307C15.4134 5.3764 15.4345 5.14146 15.5154 4.92794C15.5963 4.71443 15.7333 4.53193 15.9091 4.40353C16.0849 4.27514 16.2915 4.20661 16.5029 4.20661C16.7863 4.20698 17.058 4.33021 17.2584 4.54926C17.4588 4.76832 17.5715 5.06532 17.5718 5.37511Z"
+                                    d="M10.475 6.412C9.56343 6.412 8.67232 6.70747 7.91438 7.26106C7.15643 7.81464 6.56568 8.60147 6.21684 9.52204C5.868 10.4426 5.77672 11.4556 5.95456 12.4329C6.1324 13.4101 6.57136 14.3078 7.21595 15.0124C7.86053 15.717 8.68177 16.1968 9.57583 16.3912C10.4699 16.5856 11.3966 16.4858 12.2388 16.1045C13.081 15.7232 13.8008 15.0775 14.3072 14.249C14.8137 13.4205 15.084 12.4464 15.084 11.45C15.0826 10.1143 14.5966 8.83375 13.7325 7.88927C12.8685 6.94479 11.697 6.41352 10.475 6.412ZM10.475 15.572C9.72917 15.572 9.00008 15.3302 8.37995 14.8773C7.75981 14.4244 7.27647 13.7806 6.99105 13.0274C6.70563 12.2742 6.63095 11.4454 6.77646 10.6458C6.92196 9.84625 7.28112 9.11178 7.8085 8.53531C8.33589 7.95883 9.00781 7.56625 9.73931 7.4072C10.4708 7.24815 11.229 7.32978 11.9181 7.64177C12.6072 7.95375 13.1961 8.48208 13.6105 9.15994C14.0248 9.8378 14.246 10.6347 14.246 11.45C14.246 12.5432 13.8487 13.5917 13.1415 14.3647C12.4343 15.1377 11.4751 15.572 10.475 15.572ZM15.503 0H5.447C4.00288 0.00181825 2.61838 0.629697 1.59723 1.74589C0.576076 2.86209 0.00166342 4.37546 0 5.954V16.946C0.00166342 18.5245 0.576076 20.0379 1.59723 21.1541C2.61838 22.2703 4.00288 22.8982 5.447 22.9H15.503C16.9471 22.8982 18.3316 22.2703 19.3528 21.1541C20.3739 20.0379 20.9483 18.5245 20.95 16.946V5.954C20.9483 4.37546 20.3739 2.86209 19.3528 1.74589C18.3316 0.629697 16.9471 0.00181825 15.503 0ZM20.112 16.946C20.1106 18.2817 19.6246 19.5623 18.7605 20.5067C17.8965 21.4512 16.725 21.9825 15.503 21.984H5.447C4.22504 21.9825 3.05353 21.4512 2.18948 20.5067C1.32542 19.5623 0.839386 18.2817 0.838 16.946V5.954C0.839386 4.6183 1.32542 3.33775 2.18948 2.39327C3.05353 1.44879 4.22504 0.917515 5.447 0.916H15.503C16.725 0.917515 17.8965 1.44879 18.7605 2.39327C19.6246 3.33775 20.1106 4.6183 20.112 5.954V16.946ZM16.76 5.496C16.76 5.67717 16.7109 5.85427 16.6188 6.0049C16.5267 6.15554 16.3958 6.27294 16.2427 6.34227C16.0896 6.4116 15.9211 6.42974 15.7585 6.3944C15.596 6.35906 15.4466 6.27181 15.3294 6.14371C15.2122 6.0156 15.1324 5.85239 15.1001 5.6747C15.0678 5.49702 15.0844 5.31284 15.1478 5.14546C15.2112 4.97808 15.3186 4.83503 15.4564 4.73437C15.5942 4.63372 15.7563 4.58 15.922 4.58C16.1443 4.58 16.3574 4.67651 16.5146 4.84829C16.6717 5.02007 16.76 5.25306 16.76 5.496Z"
                                     fill="white" />
                             </svg>
                         </a>
-                        <a href="https://www.twitter.com/" target="_blank"><svg width="22" height="23"
-                                viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.twitter.com/" target="_blank"><svg class="footer_icon" width="22"
+                                height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.6878 0C4.91201 0 0.212158 5.13645 0.212158 11.4513C0.212158 17.7662 4.91201 22.9026 10.6878 22.9026C16.4637 22.9026 21.1635 17.7662 21.1635 11.4513C21.1635 5.13645 16.4637 0 10.6878 0ZM10.6878 22.1399C5.2968 22.1399 0.911191 17.3448 0.911191 11.4513C0.911191 5.55782 5.2968 0.762754 10.6878 0.762754C16.0789 0.762754 20.4645 5.55782 20.4645 11.4513C20.4645 17.3448 16.0789 22.1399 10.6878 22.1399Z"
                                     fill="white" />
@@ -604,8 +631,8 @@
                                     fill="white" />
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank"><svg width="22" height="23"
-                                viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="https://www.facebook.com/" target="_blank"><svg class="footer_icon" width="22"
+                                height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M11.0653 0C5.28945 0 0.5896 5.13645 0.5896 11.4513C0.5896 17.7662 5.28945 22.9026 11.0653 22.9026C16.8411 22.9026 21.541 17.7662 21.541 11.4513C21.541 5.13645 16.8411 0 11.0653 0ZM11.0653 22.1399C5.67425 22.1399 1.28863 17.3448 1.28863 11.4513C1.28863 5.55782 5.67425 0.762754 11.0653 0.762754C16.4563 0.762754 20.8419 5.55782 20.8419 11.4513C20.8419 17.3448 16.4563 22.1399 11.0653 22.1399Z"
                                     fill="white" />

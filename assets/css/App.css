@@ -62,6 +62,13 @@
 .max_w_908 {
   max-width: 908px !important;
 }
+.footer_icon{
+  transition: all .3s linear !important;
+}
+.footer_icon:hover{
+  transform: scale(1.2);
+}
+
 .under_line::after,
 .footer_link::after {
   position: absolute;
@@ -85,7 +92,7 @@
   width: 100%;
 }
 .hero_py {
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 398px;
 }
 /* ----------------------------------------Welcome Our Story------------------------------------- */
@@ -328,7 +335,7 @@
 /* =========================================media-quaries=========================================== */
 @media (max-width: 1441px) {
   .hero_py {
-    padding-top: 150px;
+    padding-top: 70px;
     padding-bottom: 200px;
   }
   .deal_prev_btn,
@@ -395,54 +402,40 @@
   }
 }
 @media (max-width: 991px) {
-  label[for="menuIcon"] {
-    width: 35px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
+  .overflow_hidden {
+    overflow: hidden !important;
   }
-  .line1,
-  .line2,
-  .line3 {
+  .mobile_view {
+    position: fixed;
+    right: -100%;
+    top: 0;
     width: 100%;
-    height: 5px;
-    background-color: white;
-    border-radius: 2px;
-    align-items: center;
-    transition: all 300ms linear;
+    height: 100vh;
+    background-color: #bd7d41;
+    transition: 300ms linear;
+    z-index: 10;
   }
-  .cross_icon .line1 {
-    transform: rotate(50deg) translate(13px, 13px);
-    transition: all 0.2s linear;
+  .z_index_11{
+    z-index: 11;
   }
-  .cross_icon .line2 {
+  .line,
+  .line1,
+  .line2 {
+    width: 35px;
+    background-color: #ffffff;
+    min-height: 3px;
+    border-radius: 15px;
+    transition: 300ms linear;
+  }
+  .cross .line {
+    transform: rotate(50deg) translate(17px, 14px);
+  }
+  .cross .line1 {
     transform: translateX(-50%);
     opacity: 0;
   }
-  .cross_icon .line3 {
+  .cross .line2 {
     transform: rotate(-50deg) translateY(-50%);
-    transition: all 0.2s linear;
-  }
-  .navbox {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    transition: all 300ms linear;
-    z-index: 1;
-    gap: 30px !important;
-  }
-  .right-0 {
-    right: 0;
   }
   .max_w_506 {
     max-width: unset;

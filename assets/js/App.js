@@ -1,12 +1,8 @@
 //==========================================navbar====================================
-let label = document.querySelector("#label")
-let navbox = document.querySelector(".navbox")
-label.addEventListener("click", function () {
-  navbox.classList.toggle("right-0");
-})
-function showNav() {
-  document.body.classList.toggle('overflow-hidden')
-  document.getElementById("label").classList.toggle("cross_icon");
+function opennav() {
+  document.getElementById("navbar").classList.toggle("end-0");
+  document.body.classList.toggle('overflow_hidden');
+  document.getElementById("menubtn-icon").classList.toggle("cross");
 }
 // <!-- ==================Buy trending furniture Products============================== -->
 $('.buyslider').slick({
@@ -139,21 +135,13 @@ $('.testimonaial').slick({
       }
     },
     {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 400,
+      breakpoint:576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
       }
-    }
+    },
   ]
 });
 // =====================================our products cards======================================
@@ -173,7 +161,7 @@ const generateCards = (data) => {
       <img src=${item.Image} alt="Sofa" class="w-100 duration">
       <div class="d-flex justify-content-between align-items-center my-3 pt-1 ">
           <h4 class="ff_poppins fw-medium fs_md lh_150 text-black mb-0">Single Sofa</h4>
-          <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100 me-5">
+          <img src="./assets/images/png/star_img.png" alt="star_img" class="max_w_98 w-100">
       </div>
       <p class="ff_poppins fw-normal fs_8sm text_darkgray mb-3 pb-1">Lorem ipsum dolor </p>
       <div class="d-flex align-items-center justify-content-between">
@@ -240,8 +228,8 @@ $(document).ready(function () {
 });
 // =========================================preloader==========================================
 setTimeout(() => {
-  console.log("Delayed for 5 second.");
   document.getElementById("preloader").classList.add("opacity_0")
   document.getElementById("preloader").classList.add("pointer_event_none")
   document.body.classList.remove("overflow-hidden")
+  window.scrollTo(0, 0);
 }, 4000);
